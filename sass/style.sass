@@ -1,0 +1,315 @@
+// Шрифты
+@import "fonts"
+
+// Цвета
+@import "colors"
+
+	
+
+
+// Базовые стили
+html
+	font-size: 10px
+body 
+	padding: 0
+	margin: 0
+	background: $blue url() top center no-repeat
+	background-size: 100%
+	font-family: 'medium'
+	font-size: 1.5rem
+.blue
+	color: $blue
+.blue-bg
+	background-color: $blue
+// Основные стили
+.header
+	padding-top: 0.6rem
+	color: $white
+	font-size: 1.2rem
+
+	a
+		color: $white
+		text-decoration: none
+	&-blog
+		padding: 0.5rem 1rem
+		transition: all 0.4s
+		&:hover
+			background-color: #005dc3
+
+.main
+	margin-top: 15rem
+	.container
+		position: relative
+		background-color: $white
+		padding: 9.5rem 8rem
+		padding-bottom: 8.5rem
+	&-reservation
+		font-size: 2.5rem
+		color: $black
+		text-transform: uppercase
+		margin-bottom: 3.8rem
+		.blue
+			text-decoration: underline
+	&-status
+		display: inline-block
+		padding: 0.8rem 1.5rem
+		padding-right: 2rem
+		line-height: 1.6
+		color: $black
+		font-family: "bold"
+		background-color: #f8f8f8
+		border: 1px solid #d0d0d0
+		margin-bottom: 1.7rem
+		&_value
+			display: inline-block
+			padding: 0.8rem 1.5rem
+			border: 1px solid $blue
+			border-top: none
+			background-color: $blue
+			color: #f8f8f8
+			font-family: "bold"
+			line-height: 1.6
+			font-size: 1.6rem
+			margin-left: -1rem
+			margin-bottom: 1.7rem
+	&-input
+		padding: 1.2rem 1.7rem
+		border: 1px solid #d0d0d0
+		background-color: #f8f8f8
+		font-size: 1.5rem
+		color: $dark
+		width: 100%
+		height: 4.5rem
+
+		&_name
+			font-size: 1.4rem
+			color: $black
+			font-family: 'bold'
+			margin-left: 1.7rem
+			margin-bottom: 1rem
+			margin-top: 2.7rem
+	&-remarks
+		padding: 1.2rem 1.7rem
+		border: 1px solid #d0d0d0
+		background-color: #f8f8f8
+		font-size: 1.6rem
+		color: $dark
+		width: 100%
+		&_name
+			font-size: 1.4rem
+			color: $black
+			font-family: 'bold'
+			margin-left: 1.7rem
+			margin-bottom: 1rem
+			margin-top: 2.7rem
+	&-services
+		position: relative
+		margin-top: 7.5rem
+		margin-bottom: 9rem
+		padding: 3.5rem 4rem
+		padding-left: 0
+		border-top: 1px solid #e0e0e0
+		border-right: 1px solid #e0e0e0
+		border-bottom: 1px solid #e0e0e0
+		&_caption
+			position: absolute
+			top: -3.6rem
+			text-transform: uppercase
+			font-size: 2.5rem
+			font-family: 'medium'
+			color: $black
+			background-color: #fff
+			padding-right: 1rem
+		&_cost
+			position: absolute
+			color: $black
+			font-size: 1.8rem
+			top: -2.4rem
+			right: 6rem
+			padding: 1rem 1.2rem
+			background-color: #f8f8f8
+			.blue
+				font-family: 'bolder'
+				font-size: 2rem
+		&_final-cost
+			position: absolute
+			bottom: -2.4rem
+			right: 7rem
+			color: $black
+			font-size: 1.8rem
+			padding: 1rem 1.2rem
+			background-color: #fff
+			.blue
+				font-family: 'bolder'
+				font-size: 2rem
+			&:after
+				position: relative
+				left: 1.8rem
+				display: inline-block
+				content: ''
+				width: 1rem
+				height: 1rem
+				border-top: 2px solid #e0e0e0
+				border-left: 2px solid #e0e0e0
+				transform: rotate(-45deg) translateY(-50%)
+		&_great-services
+			position: absolute
+			bottom: -2.4rem
+			left: 0
+			width: 68%
+			color: $black
+			font-size: 1.8rem
+			padding: 1rem 1.2rem
+			padding-left: 0
+			background-color: #fff
+			.blue
+				border: 1px solid $blue
+				padding: 0.8rem 0.6rem
+				font-family: 'bold'
+	&-table
+		border: 1px solid $dark
+		width: 100%
+		border-collapse: collapse
+		th
+			padding: 1rem 2rem
+			text-align: center
+			border: 1px solid $dark
+			border-box: collapse
+			background-color: #f8f8f8
+		td
+			border: 1px solid $dark
+			border-box: collapse
+			padding: 2rem 1rem 
+	&-logo
+		margin-bottom: 5.7rem
+	&-panel
+		position: absolute
+		top: 25%
+		left: 0
+		&-block1
+			border-bottom: 1px solid #e0e0e0
+			width: 4.8rem
+			height: 4.8rem
+			background: #f6f6f6 url(../img/panel-1.png) center no-repeat
+			transition: all 0.4s
+			span
+				display: none
+
+			&:hover
+				background-image: url(../img/panel-1-active.png)
+				width: auto
+				background-color: $blue
+				background-position: 1.5rem center
+				span
+					color: $white
+					padding: 1.3rem
+					margin-left: 4rem
+					display: inline-block
+
+		&-block2
+			border-bottom: 1px solid #e0e0e0
+			width: 4.8rem
+			height: 4.8rem
+			background: #f6f6f6 url(../img/panel-2.png) center no-repeat
+			transition: all 0.4s
+			span
+				display: none
+			&:hover
+				background-image: url(../img/panel-2-active.png)
+				width: auto
+				background-color: $blue
+				background-position: 1.5rem center
+				span
+					color: $white
+					padding: 1.3rem
+					margin-left: 4rem
+					display: inline-block
+		&-block3
+			border-bottom: 1px solid #e0e0e0
+			width: 4.8rem
+			height: 4.8rem
+			background: #f6f6f6 url(../img/panel-3.png) center no-repeat
+			transition: all 0.4s
+			span
+				display: none
+			&:hover
+				background-image: url(../img/panel-3-active.png)
+				width: auto
+				background-color: $blue
+				background-position: 1.5rem center
+				span
+					color: $white
+					padding: 1.3rem
+					margin-left: 4rem
+					display: inline-block
+		&-block4
+			border-bottom: 1px solid #e0e0e0
+			width: 4.8rem
+			height: 4.8rem
+			background: #f6f6f6 url(../img/panel-4.png) center no-repeat
+			transition: all 0.4s
+			span
+				display: none
+			&:hover
+				background-image: url(../img/panel-4-active.png)
+				width: auto
+				background-color: $blue
+				background-position: 1.5rem center
+				span
+					color: $white
+					padding: 1.3rem
+					margin-left: 4rem
+					display: inline-block
+		&-block5
+			border-bottom: 1px solid #e0e0e0
+			width: 4.8rem
+			height: 4.8rem
+			background: #f6f6f6 url(../img/panel-5.png) center no-repeat
+			transition: all 0.4s
+			span
+				display: none
+			&:hover
+				background-image: url(../img/panel-5-active.png)
+				width: auto
+				background-color: $blue
+				background-position: 1.5rem center
+				span
+					color: $white
+					padding: 1.3rem
+					margin-left: 4rem
+					display: inline-block
+		&-block6
+			border-bottom: 1px solid #e0e0e0
+			width: 4.8rem
+			height: 4.8rem
+			background: #f6f6f6 url(../img/panel-6.png) center no-repeat
+			transition: all 0.4s
+			span
+				display: none
+			&:hover
+				background-image: url(../img/panel-6-active.png)
+				width: auto
+				background-color: $blue
+				background-position: 1.5rem center
+				span
+					color: $white
+					padding: 1.3rem
+					margin-left: 4rem
+					display: inline-block
+		&-block7
+			position: relative
+			width: 4.8rem
+			height: 4.8rem
+			background: #f6f6f6 url(../img/panel-7-back.png) no-repeat
+			background-position: center 30%
+			span
+				color: $black
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translateX(-45%)
+
+// Медиа-запросы
+@media (max-width: 1200px)
+	.main-services_great-services
+		width: 61%
