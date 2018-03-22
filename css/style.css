@@ -46,7 +46,7 @@ body { padding: 0; margin: 0; background-size: 100%; font-family: "medium"; font
 .main-table th { padding: 1rem 2rem; text-align: center; border: 1px solid #616161; border-box: collapse; background-color: #f8f8f8; }
 .main-table td { border: 1px solid #616161; border-box: collapse; padding: 2rem 1rem; }
 .main-logo { margin-bottom: 5.7rem; }
-.main-panel { position: fixed; top: 40%; left: 38.1rem; }
+.main-panel { position: fixed; top: 40%; margin-left: -8rem; }
 .main-panel-block1 { border-bottom: 1px solid #e0e0e0; width: 4.8rem; height: 4.8rem; background: #f6f6f6 url(../img/panel-1.png) center no-repeat; -webkit-transition: all 0.4s; transition: all 0.4s; }
 .main-panel-block1 span { display: none; }
 .main-panel-block1:hover { background-image: url(../img/panel-1-active.png); width: auto; background-color: #005dc3; background-position: 1.5rem center; }
