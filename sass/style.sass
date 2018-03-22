@@ -79,6 +79,8 @@ body
 			transform: rotate(-135deg) translate(-50%, 100%)
 
 .main
+	position: relative
+	display: block
 	background: #fff url(../img/bg.jpg) top no-repeat
 	background-size: cover
 	padding-top: 4rem
@@ -227,8 +229,10 @@ body
 	&-logo
 		margin-bottom: 5.7rem
 	&-panel
+		cursor: pointer
 		position: fixed
-		top: 40%
+		top: 0
+		margin-top: 40rem
 		margin-left: -8rem
 
 		&-block1

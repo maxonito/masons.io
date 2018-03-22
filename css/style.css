@@ -26,7 +26,7 @@ body { padding: 0; margin: 0; background-size: 100%; font-family: "medium"; font
 .header-select:hover { background-color: #005dc3; }
 .header-select:after { display: inline-block; content: ""; width: 8px; height: 8px; border-top: 2px solid #ffffff; border-left: 2px solid #ffffff; -webkit-transform: rotate(-135deg) translate(-50%, 100%); transform: rotate(-135deg) translate(-50%, 100%); }
 
-.main { background: #fff url(../img/bg.jpg) top no-repeat; background-size: cover; padding-top: 4rem; }
+.main { position: relative; display: block; background: #fff url(../img/bg.jpg) top no-repeat; background-size: cover; padding-top: 4rem; }
 .main .container { position: relative; background-color: #ffffff; padding: 6rem 8rem; padding-bottom: 8.5rem; }
 .main-reservation { font-size: 2.5rem; color: #464646; text-transform: uppercase; margin-bottom: 3.8rem; }
 .main-reservation .blue { text-decoration: underline; }
@@ -49,7 +49,7 @@ body { padding: 0; margin: 0; background-size: 100%; font-family: "medium"; font
 .main-table th { padding: 1rem 2rem; text-align: center; border: 1px solid #616161; border-box: collapse; background-color: #f8f8f8; }
 .main-table td { border: 1px solid #616161; border-box: collapse; padding: 2rem 1rem; }
 .main-logo { margin-bottom: 5.7rem; }
-.main-panel { position: fixed; top: 40%; margin-left: -8rem; }
+.main-panel { cursor: pointer; position: fixed; top: 0; margin-top: 40rem; margin-left: -8rem; }
 .main-panel-block1 { border-bottom: 1px solid #e0e0e0; width: 4.8rem; height: 4.8rem; background: #f6f6f6 url(../img/panel-1.png) center no-repeat; -webkit-transition: all 0.4s; transition: all 0.4s; }
 .main-panel-block1 span { display: none; }
 .main-panel-block1:hover { background-image: url(../img/panel-1-active.png); width: auto; background-color: #005dc3; background-position: 1.5rem center; }
